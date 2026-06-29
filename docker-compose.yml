@@ -1,0 +1,9 @@
+services:
+  osint:
+    build: .
+    stdin_open: true
+    tty: true
+    read_only: true
+    volumes:
+      - ./data:/data
+      - ./ANON.txt:/app/ANON.txt:ro
